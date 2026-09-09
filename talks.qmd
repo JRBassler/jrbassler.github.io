@@ -22,12 +22,20 @@ Invited and contributed talks, posters, and conference presentations. Listed new
     { city: "Berlin, Germany", lat: 52.5200, lng: 13.4050, count: 1, items: [
       "Fast-Track Cities 2026 — 2026"
     ]},
-    { city: "New Orleans, LA", lat: 29.9511, lng: -90.0715, count: 3, items: [
+    { city: "New Orleans, LA", lat: 29.9511, lng: -90.0715, count: 4, items: [
       "US Fast-Track Cities 2025 Summit — 2025 (2 talks)",
-      "Fast Track Cities Steering Committee — 2024"
+      "Fast Track Cities Steering Committee — 2024",
+      "ENAR 2025 (Conference Chair) — 2025"
     ]},
-    { city: "Indianapolis, IN", lat: 39.7684, lng: -86.1581, count: 1, items: [
-      "ENAR — 2026"
+    { city: "Indianapolis, IN", lat: 39.7684, lng: -86.1581, count: 2, items: [
+      "ENAR — 2026",
+      "ENAR 2026 (Conference Chair) — 2026"
+    ]},
+    { city: "Nashville, TN", lat: 36.1627, lng: -86.7816, count: 1, items: [
+      "JSM 2025 (Conference Chair) — 2025"
+    ]},
+    { city: "Portland, OR", lat: 45.5152, lng: -122.6784, count: 1, items: [
+      "JSM 2024 (Conference Chair) — 2024"
     ]},
     { city: "Denver, CO", lat: 39.7392, lng: -104.9903, count: 2, items: [
       "CROI — 2026 (2 talks)"
@@ -251,3 +259,69 @@ Lee Y, **Bassler JR**, Yates DB, Hai A, Batey DS. Impact of Distance to HIV Clin
 
 <div class="talk-links">[Download poster (PDF)](files/posters/ENAR2018_Bassler_TBW_poster.pdf){download=""}</div>
 :::
+
+## Conference Chair
+
+<div class="section-note">Sessions chaired at national conferences.</div>
+
+::: {.talk-entry}
+**Bassler JR** (Session Chair). "Statistical Solutions for the Analysis of Imaging Data." In: ENAR 2026; 15 – 18 March 2026, Indianapolis, Indiana, USA.
+:::
+
+::: {.talk-entry}
+**Bassler JR** (Session Chair). "Statistical Modeling and Performance Analysis in Sports." In: JSM 2025; 2 – 7 August 2025, Nashville, Tennessee, USA.
+:::
+
+::: {.talk-entry}
+**Bassler JR** (Session Chair). "Collaboration 101: What a Scientist Seeks in a Statistician vs What a Statistician Seeks in a Scientist." In: ENAR 2025; 23 – 26 March 2025, New Orleans, Louisiana, USA.
+:::
+
+::: {.talk-entry}
+**Bassler JR** (Session Chair). "Crafting relevant research: Informative and translational statistics for public policy." In: JSM 2024; 3 – 8 August 2024, Portland, Oregon, USA.
+:::
+
+
+## StoryMaps, dashboards & repositories
+
+<div class="section-note">Interactive supplements to research and talks — maps, dashboards, and code repositories.</div>
+
+::: {.talk-entry}
+**Bassler JR**. (2025, November 17). UAB GIS Day: Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the United States [StoryMap]. [storymaps.arcgis.com/briefings/61d2a47074a241a9b936005cc88901ba](https://storymaps.arcgis.com/briefings/61d2a47074a241a9b936005cc88901ba)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2025, November 14). Map Supplement: Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022 [Dashboard & Repository]. [doi.org/10.17605/OSF.IO/WC598](https://doi.org/10.17605/OSF.IO/WC598)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2025, November 10). Thinking Outside the Box: Epidemic Preparedness and Vaccine Access [StoryMap]. [storymaps.arcgis.com/stories/99115f68172b43bbb7ab2debf22f5c90](https://storymaps.arcgis.com/stories/99115f68172b43bbb7ab2debf22f5c90)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2025, April 30). Map Supplement: Epidemic Preparedness and Vaccine Equity - Access for All [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/FBGEC](https://doi.org/10.17605/OSF.IO/FBGEC)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2025, April 8). Rurality Modernization: NCES Locale Classifications of US Census Tracts and Postal Codes [Repository]. [doi.org/10.17605/OSF.IO/SZUFG](https://doi.org/10.17605/OSF.IO/SZUFG)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2025, March 18). Map Supplement: Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/QZG94](https://doi.org/10.17605/OSF.IO/QZG94)
+:::
+
+::: {.talk-entry}
+**Bassler JR** & Gagnon K. (2024, September 3). Map Supplement: Comprehensive Harm Reduction and Medicine (CHRM) in Alabama [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/5GDA4](https://doi.org/10.17605/OSF.IO/5GDA4)
+:::
+
+::: {.talk-entry}
+**Bassler JR** & Ostrenga L. (2024, August 31). Map Supplement: Redlining and Time to Viral Suppression Among Persons With HIV [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/YJKUN](https://doi.org/10.17605/OSF.IO/YJKUN)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2022). AIDS-2022-Conference [Repository]. [github.com/JRBassler/AIDS-2022-Conference](https://github.com/JRBassler/AIDS-2022-Conference)
+:::
+
+::: {.talk-entry}
+**Bassler JR**. (2022). eHARS Simulation [Repository]. [github.com/JRBassler/eHARS-Simulation](https://github.com/JRBassler/eHARS-Simulation)
+:::
+

@@ -55,16 +55,16 @@ Graduate: *Foundations in Biostatistics* — Spring 2024
 ### Guest Lecturer
 
 ::: {.talk-entry}
+**University of Alabama at Birmingham**, Department of Epidemiology
+
+Graduate: *Analysis of Follow-Up Studies* — Summer 2024
+:::
+
+::: {.talk-entry}
 **University of Alabama at Birmingham**, Department of Biostatistics
 
 Graduate: *Estimation and Inference* — Fall 2020  
 Undergraduate: *Biostatistics Honors* — Fall 2019
-:::
-
-::: {.talk-entry}
-**University of Alabama at Birmingham**, Department of Epidemiology
-
-Graduate: *Analysis of Follow-Up Studies* — Summer 2024
 :::
 
 ### Teaching Assistant
