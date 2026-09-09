@@ -348,6 +348,19 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+/* Dissertation/committee detail under the DrPH entry in Education —
+   smaller, indented, and muted relative to the bold degree line above
+   it, so it visually reads as a sub-detail of that degree rather than
+   competing with it for attention (and so the next degree entry,
+   Master of Science, is easy to spot at a glance). */
+.degree-detail {
+  margin: 0.35rem 0 1rem 1.1rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid #e5e0d8;
+  font-size: 0.88rem;
+  color: #6b6b6b;
+}
+
 /* ---- Publication / talk / press list entries ----
    Every individual publication (Publications page), talk (Presentations
    page), and press item (Press page) shares the same .pub-entry /
@@ -692,6 +705,11 @@ embed[type="application/pdf"] {
   background: #262420;
   box-shadow: none;
   border: 1px solid rgba(255,255,255,0.08);
+}
+
+.quarto-dark .degree-detail {
+  border-left-color: rgba(255,255,255,0.15);
+  color: #a19c93;
 }
 
 .quarto-dark .hero .subtitle {
