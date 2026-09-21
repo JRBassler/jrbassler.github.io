@@ -375,38 +375,12 @@ ul.task-list li input[type="checkbox"] {
 </canvas>
 </div>
 <div class="teaching-hero-text">
-<p>I approach teaching biostatistics as translation work — taking rigorous methods and making them usable by students who arrive with very different quantitative backgrounds, from undergraduate honors students to graduate students in biostatistics, epidemiology, and nursing. Whether leading a course, guest lecturing, or working one-on-one as a TA, I try to keep the material grounded in the applied public health problems — HIV care outcomes, health equity, structural determinants of health — that drew me to it in the first place.</p>
+<p>Teaching statistics is an exercise in translation — finding creative ways to make rigorous methods accessible to students who arrive with very different quantitative backgrounds, from undergraduate honors students to graduate students in biostatistics, epidemiology, and nursing. Whether leading a course, guest lecturing, working one-on-one as a TA, or explaining a concept to a collaborator, I try to keep the material grounded in the applied public health problems that drew me to it in the first place.</p>
 </div>
 </div>
 <section id="teaching-experience" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-experience">Teaching Experience</h2>
 <p>Courses taught, guest lectures, and teaching assistantships. Organized by role, then institution/department.</p>
-<!--
-  Each entry below is a .talk-entry card, same style used on the
-  Presentations page, grouped under ### role headings. A typical
-  entry looks like:
-
-  ::: {.talk-entry}
-  **Institution Name**, Department
-
-  Graduate: *Course Title* — Term
-  Undergraduate: *Course Title* — Term
-  :::
-
-  (Note the two trailing spaces at the end of each course line above
-  before the line break — that's a Markdown hard break, needed so
-  multiple courses at the same institution each land on their own
-  line instead of running together.)
-
-  To attach materials (a syllabus, slides, etc.) to an entry, add a
-  line right after the course list, before the closing ":::" — same
-  {download=""} / {target="_blank"} conventions as the Presentations
-  page:
-
-  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
-
-  Materials go in files/teaching/.
--->
 <section id="adjunct-instructor-course-designer" class="level3">
 <h3 class="anchored" data-anchor-id="adjunct-instructor-course-designer">Adjunct Instructor &amp; Course Designer</h3>
 <div class="talk-entry">
@@ -425,6 +399,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Graduate: <em>Estimation and Inference</em> — Fall 2020<br>
 Undergraduate: <em>Biostatistics Honors</em> — Fall 2019</p>
 </div>
+<div class="talk-entry">
+<p><strong>West Virginia University</strong>, Department of Biostatistics</p>
+<p>Undergraduate: <em>Biostatistics for Public Health</em> — Fall 2016</p>
+</div>
 </section>
 <section id="teaching-assistant" class="level3">
 <h3 class="anchored" data-anchor-id="teaching-assistant">Teaching Assistant</h3>
@@ -436,7 +414,7 @@ Graduate: <em>SAS Data Management and Reporting with SAS</em> — Fall 2019</p>
 <div class="talk-entry">
 <p><strong>West Virginia University</strong>, Department of Biostatistics</p>
 <p>Graduate: <em>Categorical Data Analysis</em> — Spring 2017<br>
-Graduate: <em>Data Management and Reporting</em> — Fall 2016</p>
+Graduate: <em>Data Management and Reporting</em> — Fall 2016 Undergraduate: <em>Biostatistics for Public Health</em> — Fall 2016</p>
 </div>
 <script>
 (function () {
@@ -446,9 +424,7 @@ Graduate: <em>Data Management and Reporting</em> — Fall 2016</p>
 
   // ---- 1. Generate the attractor's trajectory once, up front ----
   // The Lorenz system: a simple set of three coupled equations that
-  // produces the classic "butterfly" chaotic attractor. Integrated
-  // here with 4th-order Runge-Kutta (RK4) for a smooth curve — no
-  // charting/animation library needed, it's just arithmetic.
+  // produces the classic "butterfly" chaotic attractor
   var sigma = 10, rho = 28, beta = 8 / 3;
   function derivatives(x, y, z) {
     return [sigma * (y - x), x * (rho - z) - y, x * y - beta * z];
