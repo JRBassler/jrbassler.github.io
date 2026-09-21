@@ -432,7 +432,7 @@ Locations of conference talks and invited presentations below, sized by number o
     var mapDiv = document.getElementById("talks-map");
     if (!mapDiv || typeof L === "undefined") return;
 
-    var map = L.map("talks-map", { scrollWheelZoom: false });
+    var map = L.map("talks-map", { scrollWheelZoom: true });
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18,
