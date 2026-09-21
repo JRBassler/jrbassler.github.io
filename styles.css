@@ -1,30 +1,15 @@
-/* ============================================================
-   Modern card-based theme
-   ------------------------------------------------------------
-   Every major content block on the site (the hero, the About
-   section, Research interests, Education, and each publication /
-   talk / app entry) is styled as a white "card" that floats on a
-   soft off-white page background. That's the throughline for most
-   of the rules below: a light page background + white cards with
-   a subtle box-shadow + rounded corners.
-   ============================================================ */
-
 /* ---- Base page typography ---- */
 body {
   /* System font stack: uses whatever clean sans-serif font is native
      to the visitor's OS (San Francisco on Mac, Segoe UI on Windows,
      etc.) instead of loading a custom web font. Fast and modern. */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.7;       /* generous line spacing for readability */
-  color: #2c2c2c;         /* soft black body text, not pure #000 */
-  background-color: #f6f4f0; /* warm off-white page background, so the
-                                 white cards below have something to
-                                 visually sit on top of */
+  line-height: 1.7;       
+  color: #2c2c2c;         /* soft black body text */
+  background-color: #f6f4f0; /* warm off-white page background */
 }
 
-/* Make sure the navbar and all headings use the same sans-serif
-   stack as the body, rather than whatever default the "cosmo" Quarto
-   theme ships with. Keeps typography consistent site-wide. */
+/* Make sure the navbar and all headings use the same sans-serif */
 .navbar,
 .navbar a,
 h1, h2, h3, h4, h5, h6,
@@ -73,11 +58,7 @@ h1.title, .hero h1 {
                                 as more "designed" at large sizes */
 }
 
-/* All ## (h2) section headings site-wide: bold, no underline.
-   Quarto's default theme draws a full-width horizontal rule under
-   every h2 — the `border-bottom: none !important` here turns that
-   off since it clashed with the card-based look (cards already have
-   their own visual separation via shadow + white background). */
+/* All ## (h2) section headings site-wide: bold, no underline */
 h2 {
   font-weight: 700;
   font-size: 1.3rem;
@@ -87,11 +68,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* ### (h3) sub-section headings — used to group cards within a
-   section, e.g. the "Adjunct Instructor", "Guest Lecturer", "Teaching
-   Assistant" role groupings on the Teaching page. Smaller and lighter
-   than h2 so the hierarchy (h2 section > h3 group > card) stays
-   visually clear. */
+/* ### (h3) sub-section headings */
 h3 {
   font-weight: 600;
   font-size: 1.02rem;
@@ -105,9 +82,7 @@ h3 {
 }
 
 /* Links: deep maroon accent color instead of the theme's default
-   blue, used everywhere (nav icons excluded — those are SVG icons,
-   not text links). Underline only appears on hover, not by default,
-   for a cleaner look. */
+   blue, used everywhere */
 a {
   color: #7a1f2b; /* deep maroon accent, understated */
   text-decoration: none;
@@ -117,10 +92,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons (e.g. the CV download button) pick up the same accent.
-   Quarto/Bootstrap's default .btn-outline-primary is blue; these
-   rules override it to match the maroon brand color, both at rest
-   and when hovered (hover state inverts to a solid maroon fill). */
+/* Buttons (e.g. the CV download button) pick up the same accent */
 .btn-outline-primary {
   color: #7a1f2b !important;
   border-color: #7a1f2b !important;
@@ -144,15 +116,7 @@ a:hover {
                                                 reads as a "panel" too */
 }
 
-/* ---- Hero / about block on the homepage ----
-   Structure (see index.qmd): a .hero flex row containing the
-   headshot image and a .hero-text column with the name, title, and
-   affiliation.
-
-   The Teaching and Shiny Apps pages' own heroes (see teaching.qmd and
-   shiny-apps.qmd) reuse this exact card/flex treatment for their own
-   generative-canvas visual + intro blurb, so they're grouped into the
-   same selectors rather than duplicated. */
+/* ---- Hero / about block on the homepage ---- */
 .hero,
 .teaching-hero,
 .shiny-hero {
@@ -179,26 +143,14 @@ a:hover {
 }
 
 /* The Teaching/Shiny Apps heroes should have their canvas fill the
-   full height of the card (matching however tall the adjacent text
-   happens to be), unlike the homepage hero where the headshot photo
-   stays centered at its own natural height. align-items: stretch
-   overrides the "center" set above just for these two, and removing
-   the visual box's own fixed height (further down) lets it grow to
-   match — flexbox stretches a height:auto child to fill the row. */
+   full height of the card */
 .teaching-hero,
 .shiny-hero {
   align-items: stretch;
 }
 
 /* Teaching and Shiny Apps pages: generative canvas visuals, playing
-   the same role .headshot plays in the homepage hero — a decorative
-   box beside the intro text, sized to fill the card's height (see
-   align-items: stretch above; width stays fixed). Each is rendered by
-   its own page's <canvas> script (see the JS at the end of
-   teaching.qmd and shiny-apps.qmd). Kept at a fixed dark backdrop
-   regardless of the site's light/dark mode, same as the homepage's
-   banner-img photo isn't re-colored between modes either: this is
-   decorative art, not themed UI chrome. */
+   the same role .headshot plays in the homepage hero */
 .teaching-hero-visual,
 .shiny-hero-visual {
   width: 260px;
@@ -235,11 +187,7 @@ a:hover {
 }
 
 /* Headshot photo: shown as a rounded-rectangle "card" at its natural
-   aspect ratio — width is fixed, height is auto, so the full photo
-   always displays with nothing cropped off. (A circular avatar was
-   tried here first, but cropping this particular photo to a square
-   made the crop feel too tight/zoomed-in on the face; showing the
-   whole image avoids that without needing to alter the photo.) */
+   aspect ratio */
 .headshot {
   width: 170px;
   height: auto;
@@ -265,13 +213,7 @@ a:hover {
   }
 }
 
-/* ---- "About" section watermark/background image (provided by John) ----
-   The image lives on its own ::before layer (a separate box drawn
-   behind the section's actual text), rather than being set as the
-   .about-section's own `background-image`. That separation matters:
-   it means the image's opacity/brightness can be tuned right here in
-   this file without ever touching the text on top of it, and without
-   needing to re-edit or re-export the image file itself. */
+/* ---- "About" section watermark/background image ---- */
 .about-section {
   position: relative;   /* required so the ::before below (which is
                             `position: absolute`) is positioned
@@ -305,10 +247,7 @@ a:hover {
   z-index: 0;   /* sit behind the text (see the next rule) */
 }
 
-/* Everything that's an actual (direct) child of .about-section — the
-   heading and paragraphs — is lifted onto its own stacking layer
-   above the watermark image, so the text always stays fully legible
-   regardless of what's happening in the image behind it. */
+/* Everything that's an actual (direct) child of .about-section */
 .about-section > * {
   position: relative;
   z-index: 1;
@@ -316,12 +255,7 @@ a:hover {
 
 /* Animated particle "constellation" layer (tsParticles, loaded in
    index.qmd) that drifts over the topo watermark above and sits
-   behind the About text below. An ID selector so it reliably wins
-   over the more general ".about-section > *" rule just above,
-   regardless of stylesheet order (a lower z-index here is what keeps
-   it behind the text; position: absolute + inset: 0 makes it fill
-   the whole card, clipped to the rounded corners by the card's own
-   `overflow: hidden`). */
+   behind the About text below */
 #about-particles {
   position: absolute;
   inset: 0;
@@ -329,16 +263,10 @@ a:hover {
 }
 
 .about-section h2 {
-  margin-top: 0; /* cancel the global h2 top margin here — this is the
-                     first thing inside the card, so it shouldn't have
-                     extra space above it */
+  margin-top: 0; /* cancel the global h2 top margin here */
 }
 
-/* Research interests / Education sections on the homepage, as cards.
-   These are targeted by their auto-generated heading IDs (Quarto
-   turns "## Research interests" into id="research-interests", and
-   "## Education" into id="education") rather than a custom CSS class,
-   since no class was added to those sections in index.qmd. */
+/* Research interests / Education sections on the homepage, as cards */
 #research-interests,
 #education {
   background: #ffffff;
@@ -348,11 +276,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Dissertation/committee detail under the DrPH entry in Education —
-   smaller, indented, and muted relative to the bold degree line above
-   it, so it visually reads as a sub-detail of that degree rather than
-   competing with it for attention (and so the next degree entry,
-   Master of Science, is easy to spot at a glance). */
+/* Dissertation/committee detail under the DrPH entry in Education */
 .degree-detail {
   margin: 0.35rem 0 1rem 1.1rem;
   padding-left: 0.85rem;
@@ -361,13 +285,7 @@ a:hover {
   color: #6b6b6b;
 }
 
-/* ---- Publication / talk / press list entries ----
-   Every individual publication (Publications page), talk (Presentations
-   page), and press item (Press page) shares the same .pub-entry /
-   .talk-entry markup, so styling both selectors together keeps all
-   three pages visually consistent. Each entry renders as its own
-   small card (as opposed to the old design, which just separated
-   entries with a thin horizontal divider line). */
+/* ---- Publication / talk / press list entries ---- */
 .pub-entry, .talk-entry {
   background: #ffffff;
   border-radius: 12px;
@@ -398,9 +316,7 @@ a:hover {
 }
 
 /* The live citation-count number injected by publications.qmd's
-   JavaScript (Semantic Scholar / Crossref lookup) — styled as a
-   quiet gray badge so it doesn't compete visually with the citation
-   text itself. */
+   JavaScript (Semantic Scholar / Crossref lookup) */
 .citation-badge {
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -414,9 +330,7 @@ a:hover {
 }
 
 /* Altmetric's third-party widget (embed.js) renders its own SVG bar
-   into this span — this just controls its vertical alignment so it
-   sits on the same line as the DOI/PubMed links and citation count
-   instead of dropping to its own line. */
+   into this span */
 .altmetric-embed {
   vertical-align: middle;
   margin-right: 0.5rem;
@@ -469,12 +383,7 @@ a:hover {
   color: #888;
 }
 
-/* ---- Publications search/filter box ----
-   The text input at the top of the Publications page (see
-   publications.qmd's inline script) that narrows the ~40 entries by
-   title/author/journal/year. Styled as its own small card, matching
-   the .pub-entry / .section-note treatment already used on this
-   page. */
+/* ---- Publications search/filter box ---- */
 .pub-search {
   margin-bottom: 1.25rem;
 }
@@ -516,9 +425,7 @@ a:hover {
   display: none !important;
 }
 
-/* ---- Shiny Apps & Dashboards cards ----
-   Each app on the Shiny Apps page is a horizontal card: a thumbnail
-   screenshot on the left, description/links on the right. */
+/* ---- Shiny Apps & Dashboards cards ---- */
 .app-entry {
   display: flex;
   flex-direction: row;
@@ -592,11 +499,120 @@ a:hover {
   }
 }
 
-/* Press page: a portrait photo alongside one entry's citation text
-   (reuses .app-entry for the card/flex-row and .app-text for the
-   text column, same as the Shiny Apps cards above). .app-thumb is
-   sized for wide landscape screenshots, so this narrower rule is
-   used instead for the portrait-oriented photo. */
+/* ---- CENS timeline ---- */
+.cens-timeline {
+  position: relative;
+  margin: 1.75rem 0 1rem 0.5rem;
+  padding-left: 2.5rem;
+}
+ 
+.cens-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: #e5e0d8;
+}
+ 
+.cens-timeline-item {
+  position: relative;
+}
+ 
+.cens-timeline-milestone {
+  margin-bottom: 1.5rem;
+}
+ 
+.cens-timeline-event {
+  margin-bottom: 1.5rem;
+}
+ 
+.cens-timeline-dot {
+  position: absolute;
+  border-radius: 50%;
+}
+ 
+.cens-timeline-milestone .cens-timeline-dot {
+  left: -2.15rem;
+  top: 0.2rem;
+  width: 18px;
+  height: 18px;
+  background: #7a1f2b;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #7a1f2b;
+}
+ 
+.cens-timeline-event .cens-timeline-dot {
+  left: -1.94rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 2px solid #7a1f2b;
+}
+ 
+.cens-timeline-year {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #7a1f2b;
+  line-height: 1.3;
+}
+ 
+.cens-timeline-role {
+  font-size: 1rem;
+  color: #2c2c2c;
+}
+ 
+/* 2027 has no role yet */
+.cens-timeline-milestone-open .cens-timeline-year {
+  color: #b08a90;
+}
+ 
+.cens-timeline-event-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #2c2c2c;
+}
+ 
+.cens-timeline-event-desc {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #777;
+  margin-top: 0.15rem;
+}
+ 
+@media (max-width: 600px) {
+  .cens-timeline {
+    padding-left: 2rem;
+  }
+  .cens-timeline-milestone .cens-timeline-dot {
+    left: -1.75rem;
+  }
+  .cens-timeline-event .cens-timeline-dot {
+    left: -1.55rem;
+  }
+}
+ 
+/* On narrow (mobile) screens, stack each app card's thumbnail above
+   its text instead of side-by-side, and let the thumbnail grow to
+   fill the available width (capped at 280px so it doesn't get huge
+   on a tablet-width screen). */
+@media (max-width: 600px) {
+  .app-entry {
+    flex-direction: column;
+  }
+  .app-thumb {
+    width: 100%;
+    max-width: 280px;
+  }
+  .press-thumb {
+    width: 140px;
+    max-width: 140px;
+  }
+}
+
+/* Press page */
 .press-thumb {
   width: 140px;
   height: auto;
@@ -605,20 +621,14 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* CV page: give the embedded PDF viewer the same rounded-corners +
-   soft-shadow "card" treatment as everything else on the site,
-   instead of the plain square-cornered border it had in the old
-   design (that border is turned off here via `border: none`). */
+/* CV page */
 embed[type="application/pdf"] {
   border-radius: 14px !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   border: none !important;
 }
 
-/* Presentations page: Leaflet map of talk locations. Needs an explicit
-   height or the map div renders with zero height. z-index: 0 keeps
-   Leaflet's internal panes (which use their own z-index stack) from
-   layering above the site's fixed navbar. */
+/* Presentations page: Leaflet map of talk locations */
 #talks-map {
   height: 420px;
   width: 100%;
@@ -649,13 +659,6 @@ embed[type="application/pdf"] {
    That switch alone repaints every stock Bootstrap element (footer,
    default buttons, etc.) correctly, since those pull their colors
    from Bootstrap variables that "darkly" redefines.
-
-   It does NOT touch anything hardcoded above in this file — the warm
-   off-white page background, the white "cards," the maroon accent, or
-   any of the specific muted-gray text shades — since those are literal
-   hex values, several behind !important. Each one needs an explicit
-   dark counterpart here. Selectors are listed in the same order as
-   their light-mode originals above so the two are easy to compare.
    ============================================================ */
 
 .quarto-dark {
@@ -687,12 +690,6 @@ embed[type="application/pdf"] {
   color: #1b1a18 !important;
 }
 
-/* The site's "card" surfaces (hero, about-section watermark card,
-   Research/Education, and every pub/talk/app entry) all share the
-   same white-card-on-light-page treatment in light mode, so they
-   share the same dark-card treatment here too. A subtle light border
-   replaces the box-shadow, since a shadow tinted rgba(0,0,0,...)
-   barely shows up against an already-dark page background. */
 .quarto-dark .hero,
 .quarto-dark .teaching-hero,
 .quarto-dark .shiny-hero,
@@ -709,6 +706,38 @@ embed[type="application/pdf"] {
 
 .quarto-dark .degree-detail {
   border-left-color: rgba(255,255,255,0.15);
+  color: #a19c93;
+}
+
+.quarto-dark .cens-timeline::before {
+  background: rgba(255,255,255,0.15);
+}
+ 
+.quarto-dark .cens-timeline-milestone .cens-timeline-dot {
+  background: #d9808c;
+  border-color: #1b1a18;
+  box-shadow: 0 0 0 2px #d9808c;
+}
+ 
+.quarto-dark .cens-timeline-event .cens-timeline-dot {
+  background: #1b1a18;
+  border-color: #d9808c;
+}
+ 
+.quarto-dark .cens-timeline-year {
+  color: #d9808c;
+}
+ 
+.quarto-dark .cens-timeline-role,
+.quarto-dark .cens-timeline-event-title {
+  color: #e8e5e0;
+}
+ 
+.quarto-dark .cens-timeline-milestone-open .cens-timeline-year {
+  color: #9c6b71;
+}
+ 
+.quarto-dark .cens-timeline-event-desc {
   color: #a19c93;
 }
 
