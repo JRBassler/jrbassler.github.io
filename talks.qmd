@@ -108,32 +108,6 @@ Invited and contributed talks, posters, and conference presentations. Listed new
 
 ## Presentations
 
-<!--
-  To attach materials to any presentation below, add a line right after
-  its citation text, before the closing ":::". Two cases:
-
-  1) A hard file you're hosting yourself (poster PDF, slides, etc.) —
-     use {download=""} so it forces a browser download instead of
-     opening in a new tab:
-
-     <div class="talk-links">[Download poster (PDF)](files/posters/some-file.pdf){download=""}</div>
-
-     PDF files go in files/posters/.
-
-  2) A public web page you don't control and can't download (an ArcGIS
-     StoryMap, a dashboard, an external repository) — use
-     {target="_blank"} so it opens in a new tab instead, same as links
-     elsewhere on the site:
-
-     <div class="talk-links">[View StoryMap](https://storymaps.arcgis.com/stories/some-id){target="_blank"}</div>
-
-  Multiple items on one entry can be separated with " · ", same as the
-  Publications page's DOI/PubMed links — mixing both types on one line
-  is fine, e.g.:
-
-  <div class="talk-links">[Download poster (PDF)](files/posters/some-file.pdf){download=""} · [View StoryMap](https://storymaps.arcgis.com/stories/some-id){target="_blank"}</div>
--->
-
 ::: {.talk-entry}
 **Bassler JR**, Hussaini SMQ. Where legal help is missing: Mapping legal deserts to target oncology legal navigation and medical-legal partnerships [Poster Presentation]. In: 2026 American Society of Clinical Oncology Quality Care Symposium (ASCO QC); October 2026, Boston, Massachusetts, USA. (Contributed)
 
@@ -279,49 +253,3 @@ Lee Y, **Bassler JR**, Yates DB, Hai A, Batey DS. Impact of Distance to HIV Clin
 ::: {.talk-entry}
 **Bassler JR** (Session Chair). "Crafting relevant research: Informative and translational statistics for public policy." In: JSM 2024; 3 – 8 August 2024, Portland, Oregon, USA.
 :::
-
-
-## StoryMaps, dashboards & repositories
-
-<div class="section-note">Interactive supplements to research and talks — maps, dashboards, and code repositories.</div>
-
-::: {.talk-entry}
-**Bassler JR**. (2025, November 17). UAB GIS Day: Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the United States [StoryMap]. [storymaps.arcgis.com/briefings/61d2a47074a241a9b936005cc88901ba](https://storymaps.arcgis.com/briefings/61d2a47074a241a9b936005cc88901ba)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2025, November 14). Map Supplement: Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022 [Dashboard & Repository]. [doi.org/10.17605/OSF.IO/WC598](https://doi.org/10.17605/OSF.IO/WC598)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2025, November 10). Thinking Outside the Box: Epidemic Preparedness and Vaccine Access [StoryMap]. [storymaps.arcgis.com/stories/99115f68172b43bbb7ab2debf22f5c90](https://storymaps.arcgis.com/stories/99115f68172b43bbb7ab2debf22f5c90)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2025, April 30). Map Supplement: Epidemic Preparedness and Vaccine Equity - Access for All [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/FBGEC](https://doi.org/10.17605/OSF.IO/FBGEC)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2025, April 8). Rurality Modernization: NCES Locale Classifications of US Census Tracts and Postal Codes [Repository]. [doi.org/10.17605/OSF.IO/SZUFG](https://doi.org/10.17605/OSF.IO/SZUFG)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2025, March 18). Map Supplement: Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/QZG94](https://doi.org/10.17605/OSF.IO/QZG94)
-:::
-
-::: {.talk-entry}
-**Bassler JR** & Gagnon K. (2024, September 3). Map Supplement: Comprehensive Harm Reduction and Medicine (CHRM) in Alabama [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/5GDA4](https://doi.org/10.17605/OSF.IO/5GDA4)
-:::
-
-::: {.talk-entry}
-**Bassler JR** & Ostrenga L. (2024, August 31). Map Supplement: Redlining and Time to Viral Suppression Among Persons With HIV [Shinyapp & Repository]. [doi.org/10.17605/OSF.IO/YJKUN](https://doi.org/10.17605/OSF.IO/YJKUN)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2022). AIDS-2022-Conference [Repository]. [github.com/JRBassler/AIDS-2022-Conference](https://github.com/JRBassler/AIDS-2022-Conference)
-:::
-
-::: {.talk-entry}
-**Bassler JR**. (2022). eHARS Simulation [Repository]. [github.com/JRBassler/eHARS-Simulation](https://github.com/JRBassler/eHARS-Simulation)
-:::
-
