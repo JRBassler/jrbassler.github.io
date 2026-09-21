@@ -59,7 +59,7 @@ It has been a privilege to be a member of the [Council for Emerging and New Stat
 <div class="cens-timeline-item cens-timeline-event">
 <div class="cens-timeline-dot"></div>
 <div class="cens-timeline-content">
-<div class="cens-timeline-event-title">ENAR 2026 · Session Organizer</div>
+<div class="cens-timeline-event-title">ENAR 2026 · Session Co-Organizer</div>
 <div class="cens-timeline-event-desc">"Converting AI from a Buzzword to a Tangible Skill: Dos and Don'ts for Early-Career Statisticians"</div>
 </div>
 </div>
