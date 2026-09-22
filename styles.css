@@ -499,6 +499,34 @@ a:hover {
   }
 }
 
+/* ---- CENS logo ---- */
+.cens-logo {
+  margin-bottom: 1.5rem;
+}
+ 
+.cens-logo img {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+}
+ 
+.cens-logo-light,
+.cens-logo-dark {
+  display: block;
+}
+ 
+.cens-logo-dark {
+  display: none;
+}
+ 
+.quarto-dark .cens-logo-light {
+  display: none;
+}
+ 
+.quarto-dark .cens-logo-dark {
+  display: block;
+}
+
 /* ---- CENS timeline ---- */
 .cens-timeline {
   position: relative;
