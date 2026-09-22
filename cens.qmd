@@ -1,6 +1,6 @@
----
-title: "CENS"
----
+## ---
+## title: "CENS"
+## ---
 
 <div class="cens-logo">
 <img src="files/cens-logo.png" class="cens-logo-light" alt="CENS — Council for Emerging and New Statisticians">
