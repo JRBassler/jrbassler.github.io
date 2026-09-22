@@ -30,7 +30,7 @@ It has been a privilege to be a member of the [Council for Emerging and New Stat
 <div class="cens-timeline-dot"></div>
 <div class="cens-timeline-content">
 <div class="cens-timeline-year">2025</div>
-<div class="cens-timeline-role">Steering Committee</div>
+<div class="cens-timeline-role">CENS Member</div>
 </div>
 </div>
 
@@ -54,7 +54,7 @@ It has been a privilege to be a member of the [Council for Emerging and New Stat
 <div class="cens-timeline-dot"></div>
 <div class="cens-timeline-content">
 <div class="cens-timeline-year">2026</div>
-<div class="cens-timeline-role">Co-Chair</div>
+<div class="cens-timeline-role">Steering Committee</div>
 </div>
 </div>
 
@@ -70,6 +70,7 @@ It has been a privilege to be a member of the [Council for Emerging and New Stat
 <div class="cens-timeline-dot"></div>
 <div class="cens-timeline-content">
 <div class="cens-timeline-year">2027</div>
+<div class="cens-timeline-role">Co-Chair</div>
 </div>
 </div>
 
