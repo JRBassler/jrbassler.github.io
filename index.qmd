@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "John R. Bassler, DrPH, MS"
+pagetitle: "John R. Bassler, DrPH"
 page-layout: article
 ---
 
@@ -10,7 +10,7 @@ page-layout: article
 <img src="files/headshot.jpg" class="headshot" alt="John R. Bassler">
 
 ::: {.hero-text}
-# John R. Bassler, DrPH, MS
+# John R. Bassler, DrPH
 
 <div class="subtitle">Clinical Database Manager II</div>
 
